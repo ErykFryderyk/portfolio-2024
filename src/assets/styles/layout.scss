@@ -1,0 +1,82 @@
+// Import zmiennych
+@import './variables.scss';
+
+// Ogólne zasady dla kontenera
+.container {
+  width: 100%;
+  max-width: 1200px; // Maksymalna szerokość kontenera
+  margin: 0 auto; // Wyśrodkowanie
+  padding: 0 $spacing-lg; // Odstęp po bokach
+}
+
+// Flexbox helper classes
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Grid layout
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); // 12-kolumnowy układ grid
+  gap: $spacing-md; // Odstępy między kolumnami i wierszami
+}
+
+.grid-item {
+  grid-column: span 6; // Przykład: domyślnie element zajmuje 6 kolumn
+}
+
+// Utility classes for spacing
+.m-0 { margin: 0 !important; }
+.mt-0 { margin-top: 0 !important; }
+.mb-0 { margin-bottom: 0 !important; }
+.p-0 { padding: 0 !important; }
+.pt-0 { padding-top: 0 !important; }
+.pb-0 { padding-bottom: 0 !important; }
+
+// Responsive helpers
+@media (max-width: $breakpoint-lg) {
+  .container {
+    max-width: 960px; // Maksymalna szerokość kontenera na mniejszych ekranach
+  }
+  
+  .grid {
+    grid-template-columns: repeat(6, 1fr); // Na mniejszych ekranach zmniejsz liczbę kolumn
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .container {
+    max-width: 720px;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(2, 1fr); // Jeszcze mniej kolumn na jeszcze mniejszych ekranach
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .container {
+    max-width: 100%;
+    padding: 0 $spacing-sm;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr; // Jedna kolumna na najmniejszych ekranach
+  }
+}

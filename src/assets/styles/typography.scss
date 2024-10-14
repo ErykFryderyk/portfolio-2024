@@ -1,0 +1,64 @@
+// Import zmiennych kolorów i czcionek
+@import './variables.scss';
+
+
+html {
+  font-size: 16px; // Bazowy rozmiar czcionki, do łatwego skalowania w rem
+  line-height: 1.5; // Domyślna wysokość linii
+  font-family: $font-primary; // Użycie zmiennej z pliku variables.scss
+}
+
+// Style dla nagłówków (h1-h6)
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-primary; // Użycie tej samej rodziny czcionek dla nagłówków
+  line-height: 1.2; // Troszkę mniejsza wysokość linii dla nagłówków
+  color: $black; // Kolor nagłówków
+  margin: 0 0 $spacing-md 0; // Dodanie odstępu poniżej nagłówków
+}
+
+h1 {
+  font-size: 2.5rem; // Około 40px przy bazowej wielkości czcionki 16px
+  font-weight: bold; // Grubsza czcionka dla nagłówka
+}
+
+h2 {
+  font-size: 2rem; // Około 32px
+}
+
+h3 {
+  font-size: 1.75rem; // Około 28px
+}
+
+h4 {
+  font-size: 1.5rem; // Około 24px
+}
+
+h5 {
+  font-size: 1.25rem; // Około 20px
+}
+
+h6 {
+  font-size: 1rem; // Około 16px
+  font-weight: normal; // Mniej wyraźny h6
+}
+
+// Stylowanie paragrafów
+p {
+  font-size: $font-size-base; // Standardowa wielkość tekstu, np. 16px
+  line-height: $line-height-base; // Ustawienie odpowiedniej wysokości linii
+  margin: 0 0 $spacing-md 0; // Odstęp między paragrafami
+  color: $black;
+}
+
+// Stylowanie linków
+a {
+  color: $primary-color; // Kolor linków
+  text-decoration: none; // Bez podkreślenia
+}
+
+// Stylowanie list
+ul, ol {
+  margin: $spacing-md 0;
+  padding-left: $spacing-lg;
+  color: $black;
+}

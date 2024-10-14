@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$primary-color: #000;
+$text-color: red;
+$light-color: #DCDCDC;
+
+
+
+$bg-color: $light-color;
+
+// Colors
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$accent-color: #e74c3c;
+$info-color: blue;
+$warring-color: red;
+$white: #ffffff;
+$black: #000000;
+$gray-light: #f0f0f0;
+$gray-dark: #7f8c8d;
+
+// Typography
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: '';
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-sm: 14px;
+$line-height-base: 1.5;
+$line-height-heading: 1.2;
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+
+// Breakpoints
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1440px;
+
+// Shadows
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+// Border radius
+$border-radius-sm: 2px;
+$border-radius-md: 4px;
+$border-radius-lg: 8px;
+
