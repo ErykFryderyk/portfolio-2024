@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import SectionNavigation from './components/SectionNavigation.vue';
 </script>
 
 <template>
@@ -13,8 +14,10 @@ import { RouterLink, RouterView } from 'vue-router'
       </nav>
     </div>
   </header>
+  <SectionNavigation />
   
   <RouterView />
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+</style>
